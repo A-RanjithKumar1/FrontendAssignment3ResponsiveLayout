@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <nav>
+      <img src="gallarypic.svg" alt="navicon" />
+      <div><span id="gallery">Gallery</span></div>
+      <ul class="list">
+        <li><b>All</b></li>
+        <li><b>Food</b></li>
+        <li><b>Movies</b></li>
+        <li><b>Nature</b></li>
+      </ul>
+    </nav>
+    <div class="modal" id="popup">
+      <img class="modal-content" src="" alt="popup box" />
+      <p id="imgcontent"></p>
+      <span class="close" onclick="closeModal()">&times;</span>
+    </div>
+    <div class="container">
+      <div class="box">
+        <img
+          alt="Github"
+          class="gallery-image"
+          onclick="openModal(this)"
+          src="github.jpg"
+        />
+        <p class="heading">Github</p>
+      </div>
+      <div class="box">
+        <img alt="thub" onclick="openModal(this)" src="thub.webp" />
+        <p class="heading">T-Hub</p>
+      </div>
+      <div class="box">
+        <img
+          alt="chatGpt"
+          class="gallery-image"
+          onclick="openModal(this)"
+          src="chatGpt.jpg"
+        />
+        <p class="heading">ChatGpt</p>
+      </div>
+      <div class="box" id="dd">
+        <img
+          alt="Butterfly"
+          class="gallery-image"
+          onclick="openModal(this)"
+          src="butterfly.jpg"
+        />
+        <p class="heading">Butterfly</p>
+      </div>
+      <div class="box">
+        <img
+          alt="pineapple"
+          class="item"
+          onclick="openModal(this)"
+          src="pineapple.jpg"
+        />
+        <p class="heading">Cool-Pineapple</p>
+      </div>
+      <div class="box">
+        <img
+          alt="imgdragons"
+          onclick="openModal(this)"
+          src="imaginedragons.webp"
+        />
+        <p class="heading">Imagine Dragons</p>
+      </div>
+      <div class="box">
+        <img class="item" alt="RRR" onclick="openModal(this)" src="RRR.jpg" />
+        <p class="heading">RRR Movie</p>
+      </div>
+      <div class="box">
+        <img
+          alt="SR"
+          class="gallery-image"
+          onclick="openModal(this)"
+          src="seetharamam.jpg"
+        />
+        <p class="heading">SeethRaamam Movie</p>
+      </div>
+      <div class="box">
+        <img
+          alt="notes"
+          class="gallery-image"
+          onclick="openModal(this)"
+          src="sticky-note-to-ship-code.jpg"
+        />
+        <p class="heading">Sticky Notes</p>
+      </div>
+      <div class="box">
+        <img
+          alt="TM"
+          class="gallery-image"
+          onclick="openModal(this)"
+          src="team-brainstorm-meeting-in-bright-sunny-office.jpg"
+        />
+        <p class="heading">Team Work</p>
+      </div>
+      <div class="box">
+        <img class="item" alt="eggs" onclick="openModal(this)" src="eggs.jpg" />
+        <p class="heading">Eggs</p>
+      </div>
+      <div class="box">
+        <img
+          alt="straberry"
+          class="item"
+          onclick="openModal(this)"
+          src="straberry.jpg"
+        />
+        <p class="heading">Straberry</p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="box1">
+          <h3>Useful Links</h3>
+          <a href="">About</a>
+          <a href="">Services</a>
+          <a href="">Social Media</a>
+          <a href="">Career</a>
+          <a href="">Blog</a>
+        </div>
+        <div class="box2">
+          <h3>Newsletter</h3>
+          <div>
+            <input type="text" placeholder="Enter Email" />
+            <button>Subscribe</button>
+            <p>Subscribe Now To get Unlimited Feeds</p>
+            <p class="copyright">&copy Tringapps</p>
+          </div>
+        </div>
+        <div class="box3">
+          <h3>Contact</h3>
+          <p>
+            Door No.18/57<br />11th East Cross Street, Anna Nagar<br />Madurai-625050
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- <footer>
+      <h2 style="color: green">Dynamite Studio</h2>
+      <h4>Copyright &copy Dynamite Studio,Inc</h4>
+    </footer> -->
+    <script src="gallery.js"></script>
+  </body>
+</html>
